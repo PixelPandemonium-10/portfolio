@@ -2,18 +2,17 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 
-type MenuKey = "about" | "joke";
+type MenuKey = "joke";
 
 const TrophyIcon = () => <svg className="trophy-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 7h20v10c0 7-4.4 12-10 12S14 24 14 17V7Z" /><path d="M14 11H7v4c0 5.1 3.1 8 8 8M34 11h7v4c0 5.1-3.1 8-8 8M24 29v8M17 41h14M19 37h10" /></svg>;
 
-const menuItems: Array<{ key: MenuKey | "achievements"; label: string; icon: ReactNode; hint: string; href?: string }> = [
-  { key: "about", label: "about me", icon: "◉", hint: "player profile" },
+const menuItems: Array<{ key: MenuKey | "about" | "achievements"; label: string; icon: ReactNode; hint: string; href?: string }> = [
+  { key: "about", label: "about me", icon: "◉", hint: "player profile", href: "/about" },
   { key: "achievements", label: "my achievements", icon: <TrophyIcon />, hint: "open archive", href: "/achievements" },
   { key: "joke", label: "tell me a joke", icon: "?", hint: "bonus level" },
 ];
 
 const menuContent: Record<MenuKey, { kicker: string; title: string; copy: string; details: string[]; action?: string }> = {
-  about: { kicker: "PLAYER_01 / PROFILE", title: "A curious builder with a soft spot for tiny details.", copy: "I’m Shubhra — a student who likes turning ideas into things people can actually use, play with, or smile at.", details: ["based in India", "currently learning by making", "cats are an excellent source of creative direction"] },
   joke: { kicker: "BONUS LEVEL / JOKE", title: "Why did the student bring a ladder to the math competition?", copy: "Because the problems were on another level.", details: ["I’ll see myself out now.", "Thanks for humouring the resident pixel cat.", "Try the achievement archive for the serious stuff."] },
 };
 

@@ -65,7 +65,7 @@ export default function AchievementsPage() {
           {certificates.map((certificate, index) => <article className="certificate-card" key={certificate.file}><a href={`/certs/${certificate.file}`} target="_blank" rel="noreferrer" className="certificate-image"><Image src={`/certs/${certificate.file}`} alt={`${certificate.title} certificate`} fill sizes="(max-width: 700px) 92vw, (max-width: 1050px) 44vw, 29vw" /><span>view ↗</span></a><div><p>0{index + 1} / ARCHIVE</p><h3>{certificate.title}</h3><small>{certificate.note}</small></div></article>)}
         </div>
       </section>
-      <footer className="archive-footer"><Link href="/">← back to the main world</Link></footer>
+      <footer className="archive-footer"><Link href="/">← back to the main world</Link><Link href="/about">player profile ↗</Link></footer>
     </main>
   );
 }

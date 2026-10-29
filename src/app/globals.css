@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;
-500&family=DM+Sans:wght@400;
-500;
-600;
-700&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Press+Start+2P&display=swap");
 
 :root{--navy:#182750;
 --ink:#172445;
@@ -790,4 +786,266 @@ color:#245da8;
 -webkit-background-clip:initial!important;
 background-clip:initial!important;
 transform:none!important}.hero h1 span{animation-delay:0s!important}@keyframes hii-color{0%,49%{color:#245da8}50%,99%{color:#7158c5}100%{color:#245da8}}
+
+/* About — player profile: same archive shell as the achievement vault. */
+.about-hero{align-items:center;
+grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr)}
+.about-hero-copy{position:relative}
+.about-dash{animation:dash-move 1s linear infinite;
+background:repeating-linear-gradient(90deg,#fff8df 0 18px,transparent 18px 34px);
+display:block;
+height:4px;
+margin-top:34px;
+opacity:.85;
+width:134px}
+.about-hero-side{display:flex;
+flex-direction:column;
+gap:28px;
+align-items:flex-end}
+.about-hero .archive-aside{margin-top:0}
+.profile-card{background:var(--cream);
+border:3px solid #273251;
+box-shadow:9px 9px 0 #273251;
+max-width:430px;
+width:100%}
+.profile-card-bar{align-items:center;
+background:#273251;
+color:#fcf5df;
+display:flex;
+font-family:var(--mono);
+font-size:9px;
+justify-content:space-between;
+letter-spacing:.1em;
+margin:0;
+padding:11px 14px}
+.profile-status{align-items:center;
+display:flex;
+gap:6px}
+.profile-status i{background:#46ba61;
+border:1px solid #e6ffe9;
+border-radius:50%;
+height:7px;
+width:7px}
+.profile-figure{background-image:radial-gradient(rgba(39,50,81,.14) 1px,transparent 1px);
+background-size:7px 7px;
+border-bottom:3px solid #273251;
+padding:20px 14px}
+.profile-figure svg{display:block;
+height:auto;
+margin:0 auto;
+max-width:300px;
+width:100%}
+.figure-ring{fill:none;
+stroke:#273251;
+stroke-width:3}
+.figure-diameter{opacity:.65;
+stroke:#273251;
+stroke-dasharray:6 8;
+stroke-width:2.5}
+.figure-triangle{fill:none;
+stroke:#273251;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-width:3}
+.figure-angle{fill:none;
+stroke:#273251;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-width:2.5}
+.figure-center{fill:#273251}
+.figure-node{stroke:#273251;
+stroke-width:2.5}
+.figure-mint{fill:#8fdc9a}
+.figure-yellow{fill:#ffd658}
+.figure-pink{fill:#e95b98}
+.profile-tags{display:flex;
+flex-wrap:wrap;
+gap:8px;
+list-style:none;
+margin:0;
+padding:18px}
+.profile-tags li{background:#fcf5df;
+border:2px solid #273251;
+border-radius:999px;
+font-family:var(--mono);
+font-size:9px;
+letter-spacing:.08em;
+padding:6px 11px;
+text-transform:uppercase}
+.profile-card-foot{color:#273251;
+display:flex;
+font-family:var(--mono);
+font-size:9px;
+justify-content:space-between;
+letter-spacing:.1em;
+margin:0;
+padding:0 18px 18px}
+.about-loadout{background:#273251;
+background-image:radial-gradient(rgba(252,245,223,.13) 1px,transparent 1px);
+background-size:7px 7px;
+color:#fcf5df;
+padding:clamp(38px,5vw,56px) clamp(20px,5vw,70px)}
+.about-loadout-inner{display:grid;
+gap:clamp(22px,3.5vw,40px);
+grid-template-columns:repeat(4,minmax(0,1fr));
+margin:0 auto;
+max-width:1200px}
+.about-fact{border-top:1px solid rgba(252,245,223,.32);
+padding-top:15px}
+.about-fact dt{color:#ffd658;
+font-family:var(--mono);
+font-size:10px;
+letter-spacing:.1em;
+margin:0 0 9px}
+.about-fact dd{font-size:16px;
+line-height:1.5;
+margin:0}
+.about-chapters{background:#fcf5df;
+color:#273251;
+padding:clamp(62px,8vw,112px) clamp(20px,5vw,70px)}
+.about-chapters-inner{margin:0 auto;
+max-width:1200px}
+.about-title{color:#273251;
+font-family:var(--pixel);
+font-size:clamp(23px,3.4vw,44px);
+letter-spacing:-.08em;
+line-height:1.45;
+margin:0}
+.about-title em{color:#e95b98;
+font-size:.82em}
+.about-feature-cols{display:grid;
+gap:clamp(26px,4vw,54px);
+grid-template-columns:repeat(2,minmax(0,1fr));
+margin-top:34px}
+.about-feature-cols p,.about-chapter-copy{font-size:17px;
+line-height:1.7;
+margin:0}
+.about-interests{list-style:none;
+margin:clamp(44px,6vw,72px) 0 0;
+padding:0;
+border-top:3px solid #273251}
+.about-interests li{align-items:baseline;
+border-bottom:1px solid rgba(39,50,81,.25);
+display:grid;
+gap:16px;
+grid-template-columns:52px minmax(0,1fr) auto;
+padding:21px 0}
+.about-interest-index{color:#245da8;
+font-family:var(--mono);
+font-size:10px;
+letter-spacing:.1em}
+.about-interests h3{color:#273251;
+font-family:var(--pixel);
+font-size:clamp(15px,2.1vw,26px);
+font-weight:400;
+letter-spacing:-.06em;
+line-height:1.4;
+margin:0;
+text-transform:uppercase}
+.about-interests p{color:#545e7e;
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:.06em;
+margin:0;
+text-align:right}
+.about-rule{border:0;
+border-top:1px solid rgba(39,50,81,.28);
+margin:clamp(52px,7vw,92px) 0}
+.about-chapter-pair{display:grid;
+gap:clamp(34px,5vw,64px);
+grid-template-columns:repeat(2,minmax(0,1fr))}
+.about-chapter .archive-kicker{margin-bottom:20px}
+.about-chapter-copy{margin-top:26px;
+max-width:56ch}
+.about-chapter-wide{border-top:3px solid #273251;
+display:grid;
+gap:clamp(26px,5vw,64px);
+grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);
+margin-top:clamp(52px,7vw,92px);
+padding-top:clamp(34px,4vw,52px)}
+.about-chapter-wide .about-chapter-copy{margin-top:0}
+.about-quote{border-left:4px solid #e95b98;
+font-size:clamp(19px,2.2vw,26px);
+font-weight:500;
+letter-spacing:-.02em;
+line-height:1.45;
+margin:32px 0 0;
+max-width:34ch;
+padding-left:22px}
+.about-continue{background:linear-gradient(180deg,#7fca68 0%,#65b85d 100%);
+border-top:3px solid #273251;
+overflow:hidden;
+padding:clamp(70px,10vw,118px) clamp(20px,5vw,70px);
+position:relative;
+text-align:center}
+.about-continue:before{background-image:linear-gradient(45deg,rgba(255,249,233,.12) 25%,transparent 25%,transparent 75%,rgba(255,249,233,.12) 75%);
+background-size:12px 12px;
+content:"";
+inset:0;
+pointer-events:none;
+position:absolute}
+.about-continue>*{position:relative;
+z-index:1}
+.about-continue-kicker{color:#fff9e9;
+font-family:var(--pixel);
+font-size:9px;
+letter-spacing:.1em;
+margin:0 0 26px;
+text-shadow:2px 2px 0 rgba(39,50,81,.35)}
+.about-continue h2{color:#fff9e9;
+font-family:var(--pixel);
+font-size:clamp(25px,4.4vw,52px);
+letter-spacing:-.08em;
+line-height:1.42;
+margin:0;
+text-shadow:4px 4px 0 rgba(39,50,81,.32)}
+.about-continue h2 em{color:#ffd658;
+font-size:.82em}
+.about-continue-copy{font-size:clamp(17px,2vw,21px);
+line-height:1.6;
+margin:28px auto 0;
+max-width:560px;
+text-shadow:1px 1px 0 rgba(255,249,233,.4)}
+.about-actions{display:flex;
+flex-wrap:wrap;
+gap:18px;
+justify-content:center;
+margin-top:38px}
+.about-footnote{color:rgba(255,249,233,.9);
+font-family:var(--mono);
+font-size:10px;
+letter-spacing:.06em;
+margin:34px 0 0;
+text-shadow:1px 1px 0 rgba(39,50,81,.28)}
+.about-footer{gap:14px;
+justify-content:space-between}
+.about-footer span{color:rgba(252,245,223,.72)}
+.about-footer-qed{color:#ffd658!important;
+font-family:var(--pixel);
+font-size:9px;
+letter-spacing:.06em}
+.about-page a:focus-visible,.about-page button:focus-visible{outline:3px solid #e95b98;
+outline-offset:4px}
+.about-loadout a:focus-visible,.about-footer a:focus-visible{outline-color:#ffd658}
+@media(max-width:960px){.about-loadout-inner{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.about-hero{display:block}
+.about-hero-side{align-items:stretch;
+margin-top:42px}
+.profile-card{margin:0 auto}
+.about-hero .archive-aside{align-self:stretch;
+margin-top:34px}
+.about-feature-cols{grid-template-columns:1fr}
+.about-chapter-pair{grid-template-columns:1fr}
+.about-chapter-wide{grid-template-columns:1fr}
+.about-footer{align-items:flex-start;
+flex-direction:column}}
+@media(max-width:560px){.about-loadout-inner{grid-template-columns:1fr}
+.about-interests li{gap:8px 14px;
+grid-template-columns:44px minmax(0,1fr)}
+.about-interests p{grid-column:2;
+text-align:left}
+.about-actions{flex-direction:column}
+.about-actions .achievement-button{justify-content:center}}
+@media(max-width:480px){.profile-card{box-shadow:6px 6px 0 #273251}
+.about-interests h3{font-size:15px}}
 
