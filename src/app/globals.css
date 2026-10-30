@@ -978,12 +978,6 @@ flex-wrap:wrap;
 gap:18px;
 justify-content:center;
 margin-top:38px}
-.about-footnote{color:rgba(255,249,233,.9);
-font-family:var(--mono);
-font-size:10px;
-letter-spacing:.06em;
-margin:34px 0 0;
-text-shadow:1px 1px 0 rgba(39,50,81,.28)}
 .about-footer{gap:14px;
 justify-content:space-between}
 .about-footer span{color:rgba(252,245,223,.72)}
