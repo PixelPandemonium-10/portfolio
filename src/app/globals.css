@@ -1104,11 +1104,6 @@ margin:34px 0 26px;
 max-width:20ch;
 text-shadow:3px 3px 0 rgba(255,255,255,.55)}
 .intro-start{cursor:pointer}
-.intro-note{color:rgba(39,50,81,.78);
-font-family:var(--mono);
-font-size:10px;
-letter-spacing:.08em;
-margin:26px 0 0}
 .intro-pipe{display:block;
 height:100%;
 left:9vw;
@@ -1509,11 +1504,6 @@ letter-spacing:-.07em;
 line-height:1.5;
 margin:0;
 text-shadow:4px 4px 0 rgba(39,50,81,.32)}
-.journey-complete p{font-size:clamp(16px,1.9vw,20px);
-line-height:1.6;
-margin:26px auto 0;
-max-width:560px;
-text-shadow:1px 1px 0 rgba(255,249,223,.4)}
 .journey-complete .achievement-button{cursor:pointer}
 
 /* Progress HUD */

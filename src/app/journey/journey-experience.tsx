@@ -332,10 +332,6 @@ export default function JourneyExperience() {
           <span className="stub-bird"><Bird idle /></span>
         </div>
         <h2 id="complete-title">AND THAT’S WHERE<br />THE JOURNEY STANDS.</h2>
-        <p>
-          Every experience leaves something behind — a skill, a perspective, a
-          lesson, or another idea worth building.
-        </p>
         <div className="about-actions">
           <button type="button" className="achievement-button" onClick={backToTop}>BACK TO TOP ↑</button>
           <Link href="/" className="achievement-button">BACK HOME ↗</Link>
@@ -384,7 +380,6 @@ export default function JourneyExperience() {
             <button type="button" className="start-button intro-start" onClick={startJourney}>
               LET’S JUMP IN <b>→</b>
             </button>
-            <p className="intro-note">{stops.length} stops · {chapters.length} chapters · 2023 — 2026</p>
           </div>
         </div>
       ) : null}

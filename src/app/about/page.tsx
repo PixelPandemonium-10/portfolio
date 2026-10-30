@@ -179,8 +179,7 @@ export default function AboutPage() {
         <div className="about-actions">
           <Link href="/achievements" className="achievement-button">open the achievement archive ↗</Link>
           <Link href="/" className="achievement-button">← title screen</Link>
-        </div>
-        <p className="about-footnote">* cats remain an excellent source of creative direction</p>
+        </div>        
       </section>
 
       <footer className="archive-footer about-footer">
