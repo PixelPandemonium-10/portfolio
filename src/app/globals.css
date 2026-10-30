@@ -253,24 +253,6 @@ position:absolute;
 right:-22%;
 width:40%;
 z-index:0}
-.badge{background:var(--cream);
-border:2px solid var(--ink);
-box-shadow:3px 3px 0 var(--ink);
-font-family:var(--mono);
-font-size:8px;
-line-height:1.6;
-padding:9px;
-position:absolute;
-text-align:center;
-z-index:3}
-.badge b{font-family:var(--pixel);
-font-size:7px}
-.badge-top{right:0;
-top:10%;
-transform:rotate(8deg)}
-.badge-bottom{bottom:12%;
-left:-2%;
-transform:rotate(-7deg)}
 .stage-spark{color:#fff8df;
 font-family:var(--pixel);
 position:absolute;
@@ -433,7 +415,6 @@ flex-direction:column;
 gap:12px}
 .cloud-two{right:8%;
 top:8%}
-.badge-bottom{left:0}
 .retro-card{box-shadow:6px 6px 0 var(--ink)}
 }
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;
@@ -808,24 +789,6 @@ border:3px solid #273251;
 box-shadow:9px 9px 0 #273251;
 max-width:430px;
 width:100%}
-.profile-card-bar{align-items:center;
-background:#273251;
-color:#fcf5df;
-display:flex;
-font-family:var(--mono);
-font-size:9px;
-justify-content:space-between;
-letter-spacing:.1em;
-margin:0;
-padding:11px 14px}
-.profile-status{align-items:center;
-display:flex;
-gap:6px}
-.profile-status i{background:#46ba61;
-border:1px solid #e6ffe9;
-border-radius:50%;
-height:7px;
-width:7px}
 .profile-figure{background-image:radial-gradient(rgba(39,50,81,.14) 1px,transparent 1px);
 background-size:7px 7px;
 border-bottom:3px solid #273251;
@@ -986,12 +949,6 @@ pointer-events:none;
 position:absolute}
 .about-continue>*{position:relative;
 z-index:1}
-.about-continue-kicker{color:#fff9e9;
-font-family:var(--pixel);
-font-size:9px;
-letter-spacing:.1em;
-margin:0 0 26px;
-text-shadow:2px 2px 0 rgba(39,50,81,.35)}
 .about-continue h2{color:#fff9e9;
 font-family:var(--pixel);
 font-size:clamp(25px,4.4vw,52px);
@@ -1020,15 +977,13 @@ text-shadow:1px 1px 0 rgba(39,50,81,.28)}
 .about-footer{gap:14px;
 justify-content:space-between}
 .about-footer span{color:rgba(252,245,223,.72)}
-.about-footer-qed{color:#ffd658!important;
-font-family:var(--pixel);
-font-size:9px;
-letter-spacing:.06em}
 .about-page a:focus-visible,.about-page button:focus-visible{outline:3px solid #e95b98;
 outline-offset:4px}
 .about-loadout a:focus-visible,.about-footer a:focus-visible{outline-color:#ffd658}
 @media(max-width:960px){.about-loadout-inner{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.about-hero{display:block}
+.about-page .archive-header p{display:block;
+font-size:8px}
 .about-hero-side{align-items:stretch;
 margin-top:42px}
 .profile-card{margin:0 auto}

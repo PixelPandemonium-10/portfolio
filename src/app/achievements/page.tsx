@@ -38,7 +38,7 @@ export default function AchievementsPage() {
 
       <section className="archive-hero">
         <div>
-          <p className="archive-kicker">STAGE 02 / ACHIEVEMENT VAULT</p>
+          <p className="archive-kicker">ACHIEVEMENT VAULT</p>
           <h1>Achievement<br /><em>unlocked.</em></h1>
           <p className="archive-intro">A collection of the challenges, teams, and problems that kept me moving forward.</p>
         </div>
@@ -56,7 +56,7 @@ export default function AchievementsPage() {
             <span className="folder-front"><b>CERTIFICATE<br />VAULT</b><small id="folder-title">tap to open the loot</small><i>★</i></span>
           </summary>
         </details>
-        <p className="folder-caption"><span>VAULT_01</span> Each page marks a challenge accepted, a problem explored, or a team I learned with.</p>
+        <p className="folder-caption">Each page marks a challenge accepted, a problem explored, or a team I learned with.</p>
       </section>
 
       <section className="album-section" id="album" aria-labelledby="album-title">

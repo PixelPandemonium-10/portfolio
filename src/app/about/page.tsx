@@ -52,13 +52,12 @@ export default function AboutPage() {
     <main className="archive-page game-archive about-page">
       <header className="archive-header">
         <Link href="/" className="archive-back">← home</Link>
-        <p>ABOUT MODE <span>/ PLAYER PROFILE</span></p>
-        <span className="archive-count">STAGE 01</span>
+        <p>ABOUT MODE</p>
       </header>
 
       <section className="archive-hero about-hero" aria-labelledby="about-title">
         <div className="about-hero-copy">
-          <p className="archive-kicker">STAGE 01 / CHARACTER SHEET</p>
+          <p className="archive-kicker">CHARACTER SHEET</p>
           <h1 id="about-title">Shubhra<br /><em>Shukla.</em></h1>
           <p className="archive-intro">
             I’m a student who likes math, and I’ve taken part in national and
@@ -70,11 +69,6 @@ export default function AboutPage() {
 
         <div className="about-hero-side">
           <article className="profile-card">
-            <p className="profile-card-bar">
-              <span>PLAYER_01 / PROFILE</span>
-              <span className="profile-status"><i aria-hidden="true" />READY</span>
-            </p>
-
             <div className="profile-figure">
               <svg viewBox="0 0 260 180" role="img">
                 <title>A right triangle inscribed in a circle</title>
@@ -177,7 +171,6 @@ export default function AboutPage() {
       </div>
 
       <section className="about-continue" aria-labelledby="continue-title">
-        <p className="about-continue-kicker">CONTINUE?</p>
         <h2 id="continue-title">Anyway,<br /><em>that’s me.</em></h2>
         <p className="about-continue-copy">
           A curious builder with a soft spot for tiny details — that’s the
@@ -193,7 +186,6 @@ export default function AboutPage() {
       <footer className="archive-footer about-footer">
         <Link href="/">← back to the main world</Link>
         <span>© SHUBHRA SHUKLA / 2026</span>
-        <span className="about-footer-qed">Q.E.D.</span>
       </footer>
     </main>
   );
