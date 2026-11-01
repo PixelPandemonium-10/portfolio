@@ -303,6 +303,7 @@ transform:translate(-4px,-4px)}
 .card-3{background:#9ddbf4}
 .card-4{background:#b8a2ee}
 .card-5{background:#ffb7d5}
+.card-6{background:#ffd1a9}
 .card-index{opacity:.75}
 .card-icon{font-family:var(--pixel);
 font-size:41px;
@@ -681,6 +682,14 @@ stroke-linejoin:round;
 stroke-width:3;
 width:45px}
 .publication-icon{display:block;
+fill:none;
+height:45px;
+stroke:#245da8;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-width:3;
+width:45px}
+.education-icon{display:block;
 fill:none;
 height:45px;
 stroke:#245da8;
@@ -1076,6 +1085,77 @@ text-transform:uppercase}
 @media(max-width:560px){.pub-entry{box-shadow:3px 3px 0 rgba(39,50,81,.22)}
 .pub-meta{align-items:flex-start;
 flex-direction:column;
+gap:10px}}
+
+/* Education — school record, olympiad training, and additional programs. */
+.edu-section{background:#fff9e9;
+padding:clamp(48px,6.5vw,84px) clamp(20px,5vw,70px)}
+.edu-section-alt{background:#fcf5df;
+border-bottom:1px solid rgba(39,50,81,.2);
+border-top:1px solid rgba(39,50,81,.2)}
+.edu-inner{margin:0 auto;
+max-width:1000px}
+.edu-heading{color:#273251;
+font-family:var(--pixel);
+font-size:clamp(14px,1.8vw,19px);
+letter-spacing:-.02em;
+line-height:1.5;
+margin:0 0 clamp(26px,3.5vw,40px)}
+.edu-list{display:grid;
+gap:22px;
+list-style:none;
+margin:0;
+padding:0}
+.edu-entry{background:#fff;
+border:2px solid #273251;
+box-shadow:4px 4px 0 rgba(39,50,81,.22);
+padding:clamp(22px,3vw,34px)}
+.edu-entry-head{align-items:flex-start;
+display:flex;
+gap:16px;
+justify-content:space-between}
+.edu-entry h3{color:#273251;
+font-size:clamp(18px,2.1vw,23px);
+font-weight:600;
+line-height:1.4;
+margin:0}
+.edu-status{background:#8fdc9a;
+border:2px solid #273251;
+flex-shrink:0;
+font-family:var(--mono);
+font-size:9px;
+letter-spacing:.06em;
+padding:6px 10px;
+text-transform:uppercase}
+.edu-status.is-current{background:#9ddbf4}
+.edu-qualification{color:#245da8;
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:.06em;
+margin:12px 0 0;
+text-transform:uppercase}
+.edu-desc{color:#3c486b;
+font-size:16px;
+line-height:1.65;
+margin:14px 0 0;
+max-width:680px}
+.edu-meta{display:flex;
+flex-wrap:wrap;
+gap:clamp(20px,4vw,44px);
+margin:22px 0 0}
+.edu-meta div{border-top:1px solid rgba(39,50,81,.25);
+padding-top:11px}
+.edu-meta dt{color:#6e7893;
+font-family:var(--mono);
+font-size:9px;
+letter-spacing:.1em;
+margin:0 0 6px}
+.edu-meta dd{color:#273251;
+font-size:16px;
+margin:0}
+.edu-entry-compact h3{font-size:clamp(17px,1.9vw,20px)}
+@media(max-width:560px){.edu-entry{box-shadow:3px 3px 0 rgba(39,50,81,.22)}
+.edu-entry-head{flex-direction:column;
 gap:10px}}
 
 /* Journey — a Flappy-Bird timeline built from the archive shell. */

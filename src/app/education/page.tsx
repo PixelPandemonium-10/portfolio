@@ -1,0 +1,151 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Education — Shubhra Shukla",
+  description:
+    "Formal education, olympiad training with OTIS, and additional academic programs of Shubhra Shukla.",
+};
+
+type EduEntry = {
+  institution: string;
+  qualification: string;
+  status: string;
+  current?: boolean;
+  meta: { label: string; value: string }[];
+  description?: string;
+};
+
+const formalEducation: EduEntry[] = [
+  {
+    institution: "Sir Padampat Singhania Education Center",
+    qualification: "High School Diploma",
+    status: "Completed",
+    meta: [
+      { label: "GRADE", value: "10th" },
+      { label: "RESULT", value: "92.8%" },
+    ],
+  },
+  {
+    institution: "Lucky International School",
+    qualification: "High School Diploma",
+    status: "Current",
+    current: true,
+    meta: [
+      { label: "GRADE", value: "12th" },
+      { label: "CURRICULUM", value: "Cambridge" },
+      { label: "EXPECTED GRADUATION", value: "2027" },
+    ],
+  },
+];
+
+const mathematicalTraining: EduEntry[] = [
+  {
+    institution: "OTIS",
+    qualification: "Olympiad Training for Individual Study",
+    status: "Ongoing",
+    current: true,
+    meta: [
+      { label: "AREA", value: "Mathematics" },
+      { label: "DURATION", value: "May 2026 – April 2027" },
+    ],
+    description:
+      "A year-long mathematics olympiad training program conducted by Dr. Evan Chen (MIT), focused on rigorous practice and challenging international mathematical problems.",
+  },
+];
+
+const additionalPrograms = [
+  {
+    name: "GCI World 2026",
+    description:
+      "An international data science education program developed by the Matsuo-Iwasawa Laboratory at the University of Tokyo, with support from JICA.",
+  },
+  {
+    name: "Applied Robotics Course",
+    description:
+      "An applied robotics course by Boring Sage, taken with a 90% scholarship.",
+  },
+];
+
+function EducationEntry({ entry }: { entry: EduEntry }) {
+  return (
+    <li className="edu-entry">
+      <div className="edu-entry-head">
+        <h3>{entry.institution}</h3>
+        <span className={`edu-status${entry.current ? " is-current" : ""}`}>{entry.status}</span>
+      </div>
+      <p className="edu-qualification">{entry.qualification}</p>
+      {entry.description ? <p className="edu-desc">{entry.description}</p> : null}
+      <dl className="edu-meta">
+        {entry.meta.map((item) => (
+          <div key={item.label}>
+            <dt>{item.label}</dt>
+            <dd>{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </li>
+  );
+}
+
+export default function EducationPage() {
+  return (
+    <main className="archive-page game-archive education-page">
+      <header className="archive-header">
+        <Link href="/" className="archive-back">← home</Link>
+        <p>EDUCATION MODE <span>/ academics</span></p>
+        <span className="archive-count">5 ENTRIES</span>
+      </header>
+
+      <section className="archive-hero">
+        <div>
+          <p className="archive-kicker">SCHOOL & TRAINING RECORD</p>
+          <h1>Where I’ve<br /><em>learned.</em></h1>
+          <p className="archive-intro">School, olympiad training, and the programs in between.</p>
+        </div>
+        <p className="archive-aside">CURRENTLY<br /><span>grade 12 · OTIS</span> ↓</p>
+      </section>
+
+      <section className="edu-section" aria-label="Formal education">
+        <div className="edu-inner">
+          <h2 className="edu-heading">Formal education</h2>
+          <ul className="edu-list">
+            {formalEducation.map((entry) => (
+              <EducationEntry entry={entry} key={entry.institution} />
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="edu-section edu-section-alt" aria-label="Mathematical training">
+        <div className="edu-inner">
+          <h2 className="edu-heading">Mathematical training</h2>
+          <ul className="edu-list">
+            {mathematicalTraining.map((entry) => (
+              <EducationEntry entry={entry} key={entry.institution} />
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="edu-section" aria-label="Additional programs and training">
+        <div className="edu-inner">
+          <h2 className="edu-heading">Additional programs &amp; training</h2>
+          <ul className="edu-list">
+            {additionalPrograms.map((program) => (
+              <li className="edu-entry edu-entry-compact" key={program.name}>
+                <h3>{program.name}</h3>
+                <p className="edu-desc">{program.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <footer className="archive-footer">
+        <Link href="/">← back to the main world</Link>
+        <Link href="/publications">publications ↗</Link>
+      </footer>
+    </main>
+  );
+}
