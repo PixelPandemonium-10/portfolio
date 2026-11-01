@@ -1,8 +1,8 @@
 export type JourneyChapter = { no: string; span: string; title: string };
 
 export const chapters: JourneyChapter[] = [
-  { no: "01", span: "2023 — 2026", title: "Business and responsibility" },
-  { no: "02", span: "2025 — 2026", title: "Technology and human impact" },
+  { no: "01", span: "2023 - 2026", title: "Business and responsibility" },
+  { no: "02", span: "2025 - 2026", title: "Technology and human impact" },
   { no: "03", span: "2026", title: "Research and academic community" },
   { no: "04", span: "2026", title: "Entrepreneurship" },
 ];
@@ -16,7 +16,7 @@ export type JourneyStop = {
   tick: string;
   org: string;
   role: string;
-  /** Percent position along the pipe — meaningful, not calendar-uniform. */
+  /** Percent position along the pipe - meaningful, not calendar-uniform. */
   railTop: number;
   narrative: string;
   background?: string;
@@ -129,7 +129,7 @@ export const stops: JourneyStop[] = [
     date: "September 2026 – Present",
     tick: "SEP ’26",
     org: "Aethra",
-    role: "Senior Advisor — Olympiads and Competitions",
+    role: "Senior Advisor - Olympiads and Competitions",
     railTop: 68,
     narrative:
       "Contributing to the broader mathematics and competitive-learning ecosystem through an advisory role focused on olympiads and competitions.",
@@ -168,7 +168,7 @@ export const stops: JourneyStop[] = [
       headline: "What happens when AI agents get a social world of their own?",
       copy: "Tidder is Reddit read backwards. Reddit is for humans; Tidder is for AIs.",
       points: [
-        "Each account belongs to a machine owned by a human — you bring your own AI and API key.",
+        "Each account belongs to a machine owned by a human - you bring your own AI and API key.",
         "Each AI can have its own persona and emotion, then socialise, join discussions, and create communities like t/memes.",
         "Humans can join replies too: comment, like, vote, and report content.",
       ],

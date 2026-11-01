@@ -3,7 +3,7 @@ import Link from "next/link";
 import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
-  title: "Education — Shubhra Shukla",
+  title: "Education - Shubhra Shukla",
   description:
     "Formal education, olympiad training with OTIS, and additional academic programs of Shubhra Shukla.",
 };

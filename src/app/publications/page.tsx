@@ -3,9 +3,9 @@ import Link from "next/link";
 import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
-  title: "Publications — Shubhra Shukla",
+  title: "Publications - Shubhra Shukla",
   description:
-    "Two research manuscripts under preparation by Shubhra Shukla — one-shot language learning in a non-transformer cognitive architecture, and elliptic-curve cryptography under classical and quantum cryptanalysis.",
+    "Two research manuscripts under preparation by Shubhra Shukla - one-shot language learning in a non-transformer cognitive architecture, and elliptic-curve cryptography under classical and quantum cryptanalysis.",
 };
 
 const manuscripts = [

@@ -3,21 +3,21 @@ import Link from "next/link";
 import SiteChain from "@/components/site-chain";
 
 const certificates = [
-  { file: "01_AMC12_2025_Distinction_top5pct_a.jpeg", title: "AMC 12 — Distinguished Honor Roll", note: "Top 5% · 2025" },
-  { file: "03_AIME_2025_Excellence_a.jpeg", title: "AIME — Excellence", note: "2025" },
+  { file: "01_AMC12_2025_Distinction_top5pct_a.jpeg", title: "AMC 12 - Distinguished Honor Roll", note: "Top 5% · 2025" },
+  { file: "03_AIME_2025_Excellence_a.jpeg", title: "AIME - Excellence", note: "2025" },
   { file: "05_AIME_2026_Participation.jpeg", title: "American Invitational Mathematics Examination", note: "2026" },
-  { file: "06_AIME_II_2026_ScoreSheet.jpeg", title: "AIME II — Score Sheet", note: "2026" },
-  { file: "07_Stanford_SMT_2026_Algebra_DistinguishedHM.jpeg", title: "Stanford Math Tournament — Algebra", note: "Distinguished Honorable Mention · 2026" },
-  { file: "08_Stanford_SMT_2026_Team_DistinguishedHM.jpeg", title: "Stanford Math Tournament — Team", note: "Distinguished Honorable Mention · 2026" },
+  { file: "06_AIME_II_2026_ScoreSheet.jpeg", title: "AIME II - Score Sheet", note: "2026" },
+  { file: "07_Stanford_SMT_2026_Algebra_DistinguishedHM.jpeg", title: "Stanford Math Tournament - Algebra", note: "Distinguished Honorable Mention · 2026" },
+  { file: "08_Stanford_SMT_2026_Team_DistinguishedHM.jpeg", title: "Stanford Math Tournament - Team", note: "Distinguished Honorable Mention · 2026" },
   { file: "09_PurpleComet_2026_Participation.jpeg", title: "Purple Comet! Math Meet", note: "2026" },
   { file: "10_LIMIT_ISI_2026_Participation.jpeg", title: "LIMIT x ISI Mathematics Competition", note: "2026" },
-  { file: "11_OPhO_2026_Participation.jpeg", title: "OPhO — Olympiad in Physics", note: "2026" },
-  { file: "12_YIMO_2026_Participation_a.jpeg", title: "YIMO — Participation", note: "2026" },
-  { file: "14_YIMO_2026_Finalist.jpeg", title: "YIMO — Finalist", note: "2026" },
-  { file: "16_YIMO_2026_Gold_b.jpeg", title: "YIMO — Gold Award", note: "2026" },
+  { file: "11_OPhO_2026_Participation.jpeg", title: "OPhO - Olympiad in Physics", note: "2026" },
+  { file: "12_YIMO_2026_Participation_a.jpeg", title: "YIMO - Participation", note: "2026" },
+  { file: "14_YIMO_2026_Finalist.jpeg", title: "YIMO - Finalist", note: "2026" },
+  { file: "16_YIMO_2026_Gold_b.jpeg", title: "YIMO - Gold Award", note: "2026" },
   { file: "17_AMTI_NMTC_2026_Top10pct.jpeg", title: "AMTI NMTC", note: "Top 10% · 2026" },
   { file: "18_UKMT_SMC_2026_Gold.jpeg", title: "UKMT Senior Mathematical Challenge", note: "Gold · 2026" },
-  { file: "20_NeuroTitan_SchoolAmbassador_b.jpeg", title: "NeuroTitan — School Ambassador", note: "Community leadership" },
+  { file: "20_NeuroTitan_SchoolAmbassador_b.jpeg", title: "NeuroTitan - School Ambassador", note: "Community leadership" },
   { file: "21_NSRI_Ambassador.jpeg", title: "NSRI Ambassador", note: "Community leadership" },
 ];
 
@@ -28,7 +28,7 @@ export default function AchievementsPage() {
     <main className="archive-page game-archive">
       <header className="archive-header">
         <Link href="/#menu" className="archive-back">← menu</Link>
-        <p>ACHIEVEMENT MODE <span>/ 2024—26</span></p>
+        <p>ACHIEVEMENT MODE <span>/ 2024-26</span></p>
         <span className="archive-count">{certificates.length} ITEMS FOUND</span>
       </header>
 
@@ -44,7 +44,7 @@ export default function AchievementsPage() {
       <section className="folder-section" aria-labelledby="folder-title">
         <details className="certificate-folder">
           <summary aria-labelledby="folder-title">
-            <span className="folder-back"><span className="folder-tab">2024—26</span></span>
+            <span className="folder-back"><span className="folder-tab">2024-26</span></span>
             <span className="folder-paper folder-paper-one"><Image src={`/certs/${archivePreview[0].file}`} alt="" fill sizes="190px" /></span>
             <span className="folder-paper folder-paper-two"><Image src={`/certs/${archivePreview[1].file}`} alt="" fill sizes="190px" /></span>
             <span className="folder-paper folder-paper-three"><Image src={`/certs/${archivePreview[2].file}`} alt="" fill sizes="190px" /></span>

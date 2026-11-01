@@ -3,7 +3,7 @@ import Link from "next/link";
 import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
-  title: "About — Shubhra Shukla",
+  title: "About - Shubhra Shukla",
   description:
     "A student who likes math competitions, writes code in C++, Python, and JavaScript, and works on games, physics, and small businesses.",
 };
@@ -30,7 +30,7 @@ const chapters = [
         <em>build.</em>
       </>
     ),
-    copy: "I write software — games, tools, small experiments. Most of them start as a question from math or physics and end up as something you can click.",
+    copy: "I write software - games, tools, small experiments. Most of them start as a question from math or physics and end up as something you can click.",
   },
   {
     id: "research",
@@ -116,7 +116,7 @@ export default function AboutPage() {
           <h2 className="about-title" id="math-title">Math,<br /><em>mostly.</em></h2>
           <div className="about-feature-cols">
             <p>
-              Most of my time with math goes into problem solving —
+              Most of my time with math goes into problem solving -
               olympiad-style contests, national and international ones.
             </p>
             <p>
@@ -172,7 +172,7 @@ export default function AboutPage() {
       <section className="about-continue" aria-labelledby="continue-title">
         <h2 id="continue-title">Anyway,<br /><em>that’s me.</em></h2>
         <p className="about-continue-copy">
-          A curious builder with a soft spot for tiny details — that’s the
+          A curious builder with a soft spot for tiny details - that’s the
           short version.
         </p>
         <div className="about-actions">

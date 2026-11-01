@@ -13,12 +13,12 @@ const EducationIcon = () => <svg className="education-icon" viewBox="0 0 48 48" 
 const ProgrammingIcon = () => <svg className="programming-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 16 8 24l10 8M30 16l10 8-10 8M27 12l-6 24" /></svg>;
 
 const menuItems: Array<{ key: string; label: string; icon: ReactNode; hint: string; href: string }> = [
-  { key: "about", label: "about me", icon: "◉", hint: "player profile", href: "/about" },
-  { key: "achievements", label: "my achievements", icon: <TrophyIcon />, hint: "open archive", href: "/achievements" },
-  { key: "journey", label: "my journey", icon: <JourneyIcon />, hint: "every experience has a story", href: "/journey" },
-  { key: "publications", label: "publications", icon: <PublicationIcon />, hint: "research, ideas, and manuscripts", href: "/publications" },
-  { key: "education", label: "education", icon: <EducationIcon />, hint: "academic journey and mathematical training", href: "/education" },
-  { key: "programming", label: "programming & engineering", icon: <ProgrammingIcon />, hint: "languages, tools, and things I’ve built", href: "/programming" },
+  { key: "about", label: "about me", icon: "◉", hint: "", href: "/about" },
+  { key: "achievements", label: "my achievements", icon: <TrophyIcon />, hint: "", href: "/achievements" },
+  { key: "journey", label: "my journey", icon: <JourneyIcon />, hint: "", href: "/journey" },
+  { key: "publications", label: "publications", icon: <PublicationIcon />, hint: "", href: "/publications" },
+  { key: "education", label: "education", icon: <EducationIcon />, hint: "", href: "/education" },
+  { key: "programming", label: "programming & engineering", icon: <ProgrammingIcon />, hint: "", href: "/programming" },
 ];
 
 const subscribeToHash = (onChange: () => void) => {
@@ -53,7 +53,7 @@ export default function Home() {
     <main className={`retro-shell ${hasStarted ? "is-playing" : ""}`}>
       <div className="sky" aria-hidden="true"><i className="cloud cloud-one" /><i className="cloud cloud-two" /><i className="cloud cloud-three" /><span className="star star-one">✦</span><span className="star star-two">·</span><span className="star star-three">✦</span></div>
       <section className="hero" id="home">
-        <div className="hero-copy"><h1>hii<span>!!</span></h1><p className="intro">I’m <strong>Shubhra Shukla</strong> — a curious mind who loves math and exploring new things.</p><div className="hero-actions"><button type="button" onClick={startGame} className="start-button">press start <b>→</b></button></div></div>
+        <div className="hero-copy"><h1>hii<span>!!</span></h1><p className="intro">I’m <strong>Shubhra Shukla</strong> - a curious mind who loves math and exploring new things.</p><div className="hero-actions"><button type="button" onClick={startGame} className="start-button">press start <b>→</b></button></div></div>
         <div className="character-stage" aria-label="A smiling pixel cat companion"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="pixel-cat" aria-hidden="true"><span className="cat-ear left" /><span className="cat-ear right" /><span className="cat-face"><i className="cat-eye left" /><i className="cat-eye right" /><i className="cat-nose" /><i className="cat-mouth" /></span><span className="cat-body" /><span className="cat-tail" /></div><span className="stage-spark one">✦</span><span className="stage-spark two">✦</span><span className="stage-spark three">+</span></div>
       </section>
       <section className={`menu-section ${hasStarted ? "is-open" : ""}`} id="menu" aria-labelledby="menu-title" aria-hidden={!hasStarted}><div className="game-menu-top"><button className="menu-back" type="button" onClick={backToTitle}>← title screen</button><span>SELECT A PATH</span></div><div className="game-menu-panel"><div className="section-label"><h2 id="menu-title">choose your adventure</h2><span>click to explore</span></div><div className="menu-grid">{menuItems.map((item, index) => <a key={item.key} href={item.href} className={`menu-card card-${index + 1}`}><span className="card-index">0{index + 1}</span><span className="card-icon">{item.icon}</span><span className="card-label">{item.label}</span><span className="card-hint">{item.hint} <b>→</b></span></a>)}</div></div></section>

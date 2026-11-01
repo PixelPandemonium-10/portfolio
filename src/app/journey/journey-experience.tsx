@@ -127,7 +127,7 @@ export default function JourneyExperience() {
       if (event.key === "ArrowDown" || event.key === "PageDown") next = Math.min(stops.length - 1, active + 1);
       else if (event.key === "ArrowUp" || event.key === "PageUp") next = Math.max(0, active - 1);
       else return;
-      if (next === active) return; // at the edge — let the page scroll normally
+      if (next === active) return; // at the edge - let the page scroll normally
       event.preventDefault();
       goTo(next);
     };
@@ -144,7 +144,7 @@ export default function JourneyExperience() {
     <main className={`archive-page journey-page${introOpen ? " is-intro" : ""}`}>
       <header className="archive-header">
         <Link href="/#menu" className="archive-back">← menu</Link>
-        <p>JOURNEY MODE <span>/ 2023—26</span></p>
+        <p>JOURNEY MODE <span>/ 2023-26</span></p>
         <span className="archive-count">{stops.length} STOPS</span>
       </header>
 
@@ -179,7 +179,7 @@ export default function JourneyExperience() {
                   className={`pipe-marker${index === active ? " is-active" : ""}`}
                   style={{ "--pos": `${stop.railTop}%` } as React.CSSProperties}
                   onClick={() => goTo(index)}
-                  aria-label={`Jump to ${stop.org} — ${stop.date}`}
+                  aria-label={`Jump to ${stop.org} - ${stop.date}`}
                   aria-current={index === active ? "true" : undefined}
                 >
                   <span className="marker-date">{stop.tick}</span>
@@ -346,7 +346,7 @@ export default function JourneyExperience() {
 
       <div className="journey-hud" hidden={phase !== "timeline"}>
         <span className="hud-count">{pad(hudIndex + 1)} / {pad(stops.length)}</span>
-        <span className="hud-chapter">— {chapter.title}</span>
+        <span className="hud-chapter">- {chapter.title}</span>
         <div className="hud-buttons">
           <button
             type="button"

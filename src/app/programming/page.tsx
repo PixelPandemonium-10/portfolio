@@ -4,9 +4,9 @@ import Link from "next/link";
 import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
-  title: "Programming & Engineering — Shubhra Shukla",
+  title: "Programming & Engineering - Shubhra Shukla",
   description:
-    "Languages, tools, libraries, and software projects of Shubhra Shukla — including Pulse-v9.6 and Ghost Run.",
+    "Languages, tools, libraries, and software projects of Shubhra Shukla - including Pulse-v9.6 and Ghost Run.",
 };
 
 type TechItem = { name: string; icon?: string; wide?: boolean };
@@ -108,7 +108,7 @@ export default function ProgrammingPage() {
           <h1>Programming<br /><em>&amp; Engineering.</em></h1>
           <p className="archive-intro">
             I enjoy building software, experimenting with technology, and
-            turning ideas into working projects — from interactive browser
+            turning ideas into working projects - from interactive browser
             games to data-driven systems.
           </p>
           <p className="prog-terminal" aria-hidden="true">
