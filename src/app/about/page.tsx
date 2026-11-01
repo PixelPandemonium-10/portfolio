@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 const profileFacts = [
   { label: "FOCUS", value: "Combinatorics · Geometry · Number theory" },
   { label: "TOOLKIT", value: "C++ · Python · JavaScript" },
-  { label: "TRAINING", value: "Dr. Evan Chen's OTIS program" },
   { label: "CURIOSITY", value: "Physics · research · startups" },
 ];
 
@@ -121,9 +120,9 @@ export default function AboutPage() {
               olympiad-style contests, national and international ones.
             </p>
             <p>
-              Training in Dr. Evan Chen’s OTIS program got me deeper into the
-              parts I like most: combinatorics, geometry, and number theory. I
-              like a problem more when there’s a simple idea hiding inside it.
+              Consistent olympiad training got me deeper into the parts I like
+              most: combinatorics, geometry, and number theory. I like a problem
+              more when there’s a simple idea hiding inside it.
             </p>
           </div>
 

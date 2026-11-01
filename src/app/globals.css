@@ -879,7 +879,7 @@ color:#fcf5df;
 padding:clamp(38px,5vw,56px) clamp(20px,5vw,70px)}
 .about-loadout-inner{display:grid;
 gap:clamp(22px,3.5vw,40px);
-grid-template-columns:repeat(4,minmax(0,1fr));
+grid-template-columns:repeat(3,minmax(0,1fr));
 margin:0 auto;
 max-width:1200px}
 .about-fact{border-top:1px solid rgba(252,245,223,.32);
