@@ -1,6 +1,6 @@
 # Motion Portfolio
 
-A responsive, animation-ready portfolio starter built with Next.js, TypeScript, and Motion. It is configured for deployment on Vercel.
+A responsive, animation-ready portfolio starter built with Next.js, TypeScript, and Motion. It is configured for deployment on Vercel. :D
 
 ## Run locally
 
