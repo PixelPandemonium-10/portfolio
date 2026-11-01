@@ -54,7 +54,17 @@ export default function Home() {
     <main className={`retro-shell ${hasStarted ? "is-playing" : ""}`}>
       <div className="sky" aria-hidden="true"><i className="cloud cloud-one" /><i className="cloud cloud-two" /><i className="cloud cloud-three" /><span className="star star-one">✦</span><span className="star star-two">·</span><span className="star star-three">✦</span></div>
       <section className="hero" id="home">
-        <div className="hero-copy"><h1>hii<span>!!</span></h1><p className="intro">I’m <strong>Shubhra Shukla</strong> - a curious mind who loves math and exploring new things.</p><div className="hero-actions"><button type="button" onClick={startGame} className="start-button">press start <b>→</b></button></div></div>
+        <div className="hero-copy"><h1>hii<span>!!</span></h1><p className="intro">I’m <strong>Shubhra Shukla</strong> - a curious mind who loves math and exploring new things.</p><div className="hero-actions"><button type="button" onClick={startGame} className="start-button">press start <b>→</b></button></div>
+          <div className="hero-socials">
+            <span className="socials-line" aria-hidden="true" />
+            <p className="socials-row">
+              <span className="socials-label">my socials!:</span>
+              <a href="mailto:shubhra638@gmail.com" aria-label="Email Shubhra Shukla at shubhra638@gmail.com"><Image src="/icons/gmail.svg" alt="" width={26} height={26} unoptimized /></a>
+              <a href="https://www.linkedin.com/in/shubhra-shukla-9957953b4/" target="_blank" rel="noopener noreferrer" aria-label="Shubhra Shukla on LinkedIn"><Image src="/icons/linkedin.svg" alt="" width={26} height={26} unoptimized /></a>
+              <a href="https://github.com/PixelPandemonium-10" target="_blank" rel="noopener noreferrer" aria-label="Shubhra Shukla on GitHub"><Image src="/icons/github.svg" alt="" width={26} height={26} unoptimized /></a>
+            </p>
+          </div>
+        </div>
         <div className="character-stage"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><Image className="hero-portrait" src="/portrait.png" alt="Portrait of Shubhra Shukla" width={218} height={229} priority unoptimized /><span className="stage-spark one">✦</span><span className="stage-spark two">✦</span><span className="stage-spark three">+</span></div>
       </section>
       <section className={`menu-section ${hasStarted ? "is-open" : ""}`} id="menu" aria-labelledby="menu-title" aria-hidden={!hasStarted}><div className="game-menu-top"><button className="menu-back" type="button" onClick={backToTitle}>← title screen</button><span>SELECT A PATH</span></div><div className="game-menu-panel"><div className="section-label"><h2 id="menu-title">choose your adventure</h2><span>click to explore</span></div><div className="menu-grid">{menuItems.map((item, index) => <a key={item.key} href={item.href} className={`menu-card card-${index + 1}`}><span className="card-index">0{index + 1}</span><span className="card-icon">{item.icon}</span><span className="card-label">{item.label}</span><span className="card-hint">{item.hint} <b>→</b></span></a>)}</div></div></section>
