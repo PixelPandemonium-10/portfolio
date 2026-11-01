@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
   title: "Programming & Engineering — Shubhra Shukla",
@@ -96,7 +97,7 @@ export default function ProgrammingPage() {
   return (
     <main className="archive-page game-archive programming-page">
       <header className="archive-header">
-        <Link href="/" className="archive-back">← home</Link>
+        <Link href="/#menu" className="archive-back">← menu</Link>
         <p>PROGRAMMING MODE <span>/ engineering</span></p>
         <span className="archive-count">{techCount} TECHNOLOGIES</span>
       </header>
@@ -212,8 +213,8 @@ export default function ProgrammingPage() {
       </section>
 
       <footer className="archive-footer">
-        <Link href="/">← back to the main world</Link>
-        <Link href="/about">player profile ↗</Link>
+        <Link href="/#menu">← back to the menu</Link>
+        <SiteChain current="/programming" />
       </footer>
     </main>
   );

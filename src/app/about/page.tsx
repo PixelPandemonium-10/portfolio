@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
   title: "About — Shubhra Shukla",
@@ -49,7 +50,7 @@ export default function AboutPage() {
   return (
     <main className="archive-page game-archive about-page">
       <header className="archive-header">
-        <Link href="/" className="archive-back">← home</Link>
+        <Link href="/#menu" className="archive-back">← menu</Link>
         <p>ABOUT MODE</p>
       </header>
 
@@ -176,13 +177,13 @@ export default function AboutPage() {
         </p>
         <div className="about-actions">
           <Link href="/achievements" className="achievement-button">open the achievement archive ↗</Link>
-          <Link href="/" className="achievement-button">← title screen</Link>
+          <Link href="/#menu" className="achievement-button">← back to the menu</Link>
         </div>        
       </section>
 
       <footer className="archive-footer about-footer">
-        <Link href="/">← back to the main world</Link>
-        <span>© SHUBHRA SHUKLA / 2026</span>
+        <Link href="/#menu">← back to the menu</Link>
+        <SiteChain current="/about" />
       </footer>
     </main>
   );

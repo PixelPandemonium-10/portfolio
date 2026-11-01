@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
+import SiteChain from "@/components/site-chain";
 import { chapters, pipeSegments, stops } from "./stops";
 
 type Phase = "intro" | "transition" | "timeline";
@@ -142,7 +143,7 @@ export default function JourneyExperience() {
   return (
     <main className={`archive-page journey-page${introOpen ? " is-intro" : ""}`}>
       <header className="archive-header">
-        <Link href="/" className="archive-back">← home</Link>
+        <Link href="/#menu" className="archive-back">← menu</Link>
         <p>JOURNEY MODE <span>/ 2023—26</span></p>
         <span className="archive-count">{stops.length} STOPS</span>
       </header>
@@ -334,13 +335,13 @@ export default function JourneyExperience() {
         <h2 id="complete-title">AND THAT’S WHERE<br />THE JOURNEY STANDS.</h2>
         <div className="about-actions">
           <button type="button" className="achievement-button" onClick={backToTop}>BACK TO TOP ↑</button>
-          <Link href="/" className="achievement-button">BACK HOME ↗</Link>
+          <Link href="/#menu" className="achievement-button">BACK TO THE MENU ↗</Link>
         </div>
       </section>
 
       <footer className="archive-footer">
-        <Link href="/">← back to the main world</Link>
-        <span>© SHUBHRA SHUKLA / 2026</span>
+        <Link href="/#menu">← back to the menu</Link>
+        <SiteChain current="/journey" />
       </footer>
 
       <div className="journey-hud" hidden={phase !== "timeline"}>

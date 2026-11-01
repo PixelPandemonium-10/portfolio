@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SiteChain from "@/components/site-chain";
 
 const certificates = [
   { file: "01_AMC12_2025_Distinction_top5pct_a.jpeg", title: "AMC 12 — Distinguished Honor Roll", note: "Top 5% · 2025" },
@@ -26,7 +27,7 @@ export default function AchievementsPage() {
   return (
     <main className="archive-page game-archive">
       <header className="archive-header">
-        <Link href="/" className="archive-back">← home</Link>
+        <Link href="/#menu" className="archive-back">← menu</Link>
         <p>ACHIEVEMENT MODE <span>/ 2024—26</span></p>
         <span className="archive-count">{certificates.length} ITEMS FOUND</span>
       </header>
@@ -60,7 +61,7 @@ export default function AchievementsPage() {
           {certificates.map((certificate, index) => <article className="certificate-card" key={certificate.file}><a href={`/certs/${certificate.file}`} target="_blank" rel="noreferrer" className="certificate-image"><Image src={`/certs/${certificate.file}`} alt={`${certificate.title} certificate`} fill sizes="(max-width: 700px) 92vw, (max-width: 1050px) 44vw, 29vw" /><span>view ↗</span></a><div><p>0{index + 1} / ARCHIVE</p><h3>{certificate.title}</h3><small>{certificate.note}</small></div></article>)}
         </div>
       </section>
-      <footer className="archive-footer"><Link href="/">← back to the main world</Link><Link href="/about">player profile ↗</Link></footer>
+      <footer className="archive-footer"><Link href="/#menu">← back to the menu</Link><SiteChain current="/achievements" /></footer>
     </main>
   );
 }

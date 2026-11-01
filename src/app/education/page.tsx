@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
   title: "Education — Shubhra Shukla",
@@ -92,7 +93,7 @@ export default function EducationPage() {
   return (
     <main className="archive-page game-archive education-page">
       <header className="archive-header">
-        <Link href="/" className="archive-back">← home</Link>
+        <Link href="/#menu" className="archive-back">← menu</Link>
         <p>EDUCATION MODE <span>/ academics</span></p>
         <span className="archive-count">5 ENTRIES</span>
       </header>
@@ -143,8 +144,8 @@ export default function EducationPage() {
       </section>
 
       <footer className="archive-footer">
-        <Link href="/">← back to the main world</Link>
-        <Link href="/publications">publications ↗</Link>
+        <Link href="/#menu">← back to the menu</Link>
+        <SiteChain current="/education" />
       </footer>
     </main>
   );

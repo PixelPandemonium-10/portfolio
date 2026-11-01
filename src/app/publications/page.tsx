@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteChain from "@/components/site-chain";
 
 export const metadata: Metadata = {
   title: "Publications — Shubhra Shukla",
@@ -32,7 +33,7 @@ export default function PublicationsPage() {
   return (
     <main className="archive-page game-archive publications-page">
       <header className="archive-header">
-        <Link href="/" className="archive-back">← home</Link>
+        <Link href="/#menu" className="archive-back">← menu</Link>
         <p>PUBLICATIONS MODE <span>/ research</span></p>
         <span className="archive-count">{manuscripts.length} MANUSCRIPTS</span>
       </header>
@@ -67,8 +68,8 @@ export default function PublicationsPage() {
       </section>
 
       <footer className="archive-footer">
-        <Link href="/">← back to the main world</Link>
-        <Link href="/education">education ↗</Link>
+        <Link href="/#menu">← back to the menu</Link>
+        <SiteChain current="/publications" />
       </footer>
     </main>
   );
