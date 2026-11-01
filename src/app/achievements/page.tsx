@@ -3,9 +3,7 @@ import Link from "next/link";
 
 const certificates = [
   { file: "01_AMC12_2025_Distinction_top5pct_a.jpeg", title: "AMC 12 — Distinguished Honor Roll", note: "Top 5% · 2025" },
-  { file: "02_AMC12_2025_Distinction_top5pct_b.jpeg", title: "AMC 12 — Distinguished Honor Roll", note: "Certificate detail · Top 5% · 2025" },
   { file: "03_AIME_2025_Excellence_a.jpeg", title: "AIME — Excellence", note: "2025" },
-  { file: "04_AIME_2025_Excellence_b.jpeg", title: "AIME — Excellence", note: "Certificate detail · 2025" },
   { file: "05_AIME_2026_Participation.jpeg", title: "American Invitational Mathematics Examination", note: "2026" },
   { file: "06_AIME_II_2026_ScoreSheet.jpeg", title: "AIME II — Score Sheet", note: "2026" },
   { file: "07_Stanford_SMT_2026_Algebra_DistinguishedHM.jpeg", title: "Stanford Math Tournament — Algebra", note: "Distinguished Honorable Mention · 2026" },
@@ -14,14 +12,11 @@ const certificates = [
   { file: "10_LIMIT_ISI_2026_Participation.jpeg", title: "LIMIT x ISI Mathematics Competition", note: "2026" },
   { file: "11_OPhO_2026_Participation.jpeg", title: "OPhO — Olympiad in Physics", note: "2026" },
   { file: "12_YIMO_2026_Participation_a.jpeg", title: "YIMO — Participation", note: "2026" },
-  { file: "13_YIMO_2026_Participation_b.jpeg", title: "YIMO — Participation", note: "Certificate detail · 2026" },
   { file: "14_YIMO_2026_Finalist.jpeg", title: "YIMO — Finalist", note: "2026" },
-  { file: "15_YIMO_2026_Gold_a.jpeg", title: "YIMO — Gold Award", note: "2026" },
-  { file: "16_YIMO_2026_Gold_b.jpeg", title: "YIMO — Gold Award", note: "Certificate detail · 2026" },
+  { file: "16_YIMO_2026_Gold_b.jpeg", title: "YIMO — Gold Award", note: "2026" },
   { file: "17_AMTI_NMTC_2026_Top10pct.jpeg", title: "AMTI NMTC", note: "Top 10% · 2026" },
   { file: "18_UKMT_SMC_2026_Gold.jpeg", title: "UKMT Senior Mathematical Challenge", note: "Gold · 2026" },
-  { file: "19_NeuroTitan_SchoolAmbassador_a.jpeg", title: "NeuroTitan — School Ambassador", note: "Community leadership" },
-  { file: "20_NeuroTitan_SchoolAmbassador_b.jpeg", title: "NeuroTitan — School Ambassador", note: "Certificate detail" },
+  { file: "20_NeuroTitan_SchoolAmbassador_b.jpeg", title: "NeuroTitan — School Ambassador", note: "Community leadership" },
   { file: "21_NSRI_Ambassador.jpeg", title: "NSRI Ambassador", note: "Community leadership" },
 ];
 
