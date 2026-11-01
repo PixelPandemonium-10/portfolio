@@ -19,18 +19,9 @@ type EduEntry = {
 
 const formalEducation: EduEntry[] = [
   {
-    institution: "Sir Padampat Singhania Education Center",
-    qualification: "High School Diploma",
-    status: "Completed",
-    meta: [
-      { label: "GRADE", value: "10th" },
-      { label: "RESULT", value: "92.8%" },
-    ],
-  },
-  {
     institution: "Lucky International School",
     qualification: "High School Diploma",
-    status: "Current",
+    status: "Ongoing",
     current: true,
     meta: [
       { label: "GRADE", value: "12th" },
@@ -55,16 +46,36 @@ const mathematicalTraining: EduEntry[] = [
   },
 ];
 
-const additionalPrograms = [
+const additionalPrograms: EduEntry[] = [
   {
-    name: "GCI World 2026",
+    institution: "GCI World 2026",
+    qualification: "Data Science Education Program",
+    status: "Ongoing",
+    current: true,
+    meta: [],
     description:
       "An international data science education program developed by the Matsuo-Iwasawa Laboratory at the University of Tokyo, with support from JICA.",
   },
   {
-    name: "Applied Robotics Course",
+    institution: "Applied Robotics Course",
+    qualification: "Robotics Training",
+    status: "Ongoing",
+    current: true,
+    meta: [],
     description:
       "An applied robotics course by Boring Sage, taken with a 90% scholarship.",
+  },
+  {
+    institution: "COMPOS",
+    qualification: "Comprehensive Oxford Mathematics and Physics Online School",
+    status: "Ongoing",
+    current: true,
+    meta: [
+      { label: "ORGANISER", value: "University of Oxford · Department of Physics" },
+      { label: "FOCUS", value: "Mathematics & Physics" },
+    ],
+    description:
+      "Enrolled in the University of Oxford Department of Physics outreach programme for students in Years 10–13.",
   },
 ];
 
@@ -95,7 +106,7 @@ export default function EducationPage() {
       <header className="archive-header">
         <Link href="/#menu" className="archive-back">← menu</Link>
         <p>EDUCATION MODE <span>/ academics</span></p>
-        <span className="archive-count">5 ENTRIES</span>
+        <span className="archive-count">{formalEducation.length + mathematicalTraining.length + additionalPrograms.length} ENTRIES</span>
       </header>
 
       <section className="archive-hero">
@@ -134,10 +145,7 @@ export default function EducationPage() {
           <h2 className="edu-heading">Additional programs &amp; training</h2>
           <ul className="edu-list">
             {additionalPrograms.map((program) => (
-              <li className="edu-entry edu-entry-compact" key={program.name}>
-                <h3>{program.name}</h3>
-                <p className="edu-desc">{program.description}</p>
-              </li>
+              <EducationEntry entry={program} key={program.institution} />
             ))}
           </ul>
         </div>

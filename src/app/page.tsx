@@ -13,6 +13,8 @@ const EducationIcon = () => <svg className="education-icon" viewBox="0 0 48 48" 
 
 const ProgrammingIcon = () => <svg className="programming-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 16 8 24l10 8M30 16l10 8-10 8M27 12l-6 24" /></svg>;
 
+const ResumeIcon = () => <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 3h11l5 5v21H8zM19 3v6h5M12 16h8M12 21h8M12 11h3" /></svg>;
+
 const menuItems: Array<{ key: string; label: string; icon: ReactNode; hint: string; href: string }> = [
   { key: "about", label: "about me", icon: "◉", hint: "", href: "/about" },
   { key: "achievements", label: "my achievements", icon: <TrophyIcon />, hint: "", href: "/achievements" },
@@ -57,12 +59,15 @@ export default function Home() {
         <div className="hero-copy"><h1>hii<span>!!</span></h1><p className="intro">I’m <strong>Shubhra Shukla</strong> - a curious mind who loves math and exploring new things.</p><div className="hero-actions"><button type="button" onClick={startGame} className="start-button">press start <b>→</b></button></div>
           <div className="hero-socials">
             <span className="socials-line" aria-hidden="true" />
-            <p className="socials-row">
+            <div className="socials-row">
               <span className="socials-label">my socials!:</span>
               <a href="mailto:shubhra638@gmail.com" aria-label="Email Shubhra Shukla at shubhra638@gmail.com"><Image src="/icons/gmail.svg" alt="" width={26} height={26} unoptimized /></a>
               <a href="https://www.linkedin.com/in/shubhra-shukla-9957953b4/" target="_blank" rel="noopener noreferrer" aria-label="Shubhra Shukla on LinkedIn"><Image src="/icons/linkedin.svg" alt="" width={26} height={26} unoptimized /></a>
               <a href="https://github.com/PixelPandemonium-10" target="_blank" rel="noopener noreferrer" aria-label="Shubhra Shukla on GitHub"><Image src="/icons/github.svg" alt="" width={26} height={26} unoptimized /></a>
-            </p>
+            </div>
+            <a href="https://drive.google.com/file/d/1vUwIZ-PfH5rsK4LXLQDEie3ncAzvP64D/view" target="_blank" rel="noopener noreferrer" className="resume-link" aria-label="Open Shubhra Shukla's resume">
+              <ResumeIcon /> <span>resume</span><b>↗</b>
+            </a>
           </div>
         </div>
         <div className="character-stage"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><Image className="hero-portrait" src="/portrait.png" alt="Portrait of Shubhra Shukla" width={218} height={229} priority unoptimized /><span className="stage-spark one">✦</span><span className="stage-spark two">✦</span><span className="stage-spark three">+</span></div>

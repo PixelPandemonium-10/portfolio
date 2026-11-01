@@ -5,6 +5,7 @@ export const chapters: JourneyChapter[] = [
   { no: "02", span: "2025 - 2026", title: "Technology and human impact" },
   { no: "03", span: "2026", title: "Research and academic community" },
   { no: "04", span: "2026", title: "Entrepreneurship" },
+  { no: "05", span: "2026", title: "Teaching and mentorship" },
 ];
 
 export type JourneyMetric = { period: string; sales: string; profit: string };
@@ -91,7 +92,7 @@ export const stops: JourneyStop[] = [
   {
     id: "neuro-titan",
     chapter: 2,
-    date: "December 2025 – August 2026",
+    date: "December 2025 – Present",
     tick: "DEC ’25",
     org: "Neuro Titan",
     role: "School Ambassador and Volunteer",
@@ -159,7 +160,7 @@ export const stops: JourneyStop[] = [
     date: "October 2026 – Present",
     tick: "OCT ’26",
     org: "Tidder",
-    role: "Founder",
+    role: "Founder · Website under development",
     railTop: 90,
     narrative:
       "A social platform where AI agents have their own accounts and interact with each other.",
@@ -174,6 +175,23 @@ export const stops: JourneyStop[] = [
       ],
       providers: ["OpenRouter", "Google", "Groq", "OpenAI", "Anthropic", "and others"],
     },
+  },
+  {
+    id: "schoolhouse",
+    chapter: 5,
+    date: "November 2026 – Present",
+    tick: "NOV ’26",
+    org: "Schoolhouse.world",
+    role: "Tutor",
+    railTop: 96,
+    narrative:
+      "A volunteering opportunity to support young students as a mentor through virtual learning sessions.",
+    points: [
+      "Teach SAT subjects, calculus, and algebra through virtual sessions.",
+      "Provide academic support and solve complex problems using clear, accessible approaches.",
+      "Help students learn at their own pace.",
+    ],
+    tags: ["Volunteering", "Mentorship", "Mathematics education"],
   },
 ];
 

@@ -168,6 +168,28 @@ transition:transform .18s}
 .socials-row a:focus-visible{outline:3px solid var(--pink);
 outline-offset:4px}
 .socials-row img{display:block}
+.resume-link{align-items:center;
+color:var(--ink);
+display:inline-flex;
+font-family:var(--pixel);
+font-size:8px;
+gap:7px;
+letter-spacing:.04em;
+margin-top:17px;
+text-decoration:none;
+text-transform:uppercase;
+transition:transform .18s}
+.resume-link svg{fill:none;
+height:24px;
+stroke:currentColor;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-width:2;
+width:24px}
+.resume-link b{font-size:12px}
+.resume-link:hover{transform:translateY(-3px)}
+.resume-link:focus-visible{outline:3px solid var(--pink);
+outline-offset:4px}
 .tiny-note{color:rgba(23,36,69,.7)}
 .character-stage{aspect-ratio:1/1;
 margin:auto;
@@ -1413,7 +1435,7 @@ padding:clamp(34px,5vw,64px) clamp(20px,5vw,70px) 40px;
 position:relative;
 z-index:2}
 .journey-stage.is-visible{animation:stage-in .75s cubic-bezier(.2,.8,.2,1) both}
-@keyframes stage-in{from{opacity:0;transform:scale(1.05) translateY(-2%)}to{opacity:1;transform:none}}
+@keyframes stage-in{from{opacity:0;transform:translateY(-2%)}to{opacity:1;transform:none}}
 .journey-rail{align-self:start;
 height:calc(100svh - 108px);
 min-height:460px;
@@ -1480,12 +1502,12 @@ top:var(--bp);
 transform:translate(-50%,-50%);
 transition:top .8s cubic-bezier(.34,.66,.3,1);
 width:52px;
-z-index:4}
+z-index:1}
 .pipe-bird.is-flapping{animation:bird-hop .65s ease-out}
 @keyframes bird-hop{30%{transform:translate(-50%,-74%)}100%{transform:translate(-50%,-50%)}}
 .pipe-bird.is-flapping .bird-wing{animation:wing-flap .24s ease-in-out 3}
 .pipe-bird.is-arriving{animation:bird-arrive .55s cubic-bezier(.2,.9,.2,1.2)}
-@keyframes bird-arrive{from{opacity:0;transform:translate(-50%,-50%) scale(.3)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@keyframes bird-arrive{from{opacity:0;transform:translate(-50%,-50%)}to{opacity:1;transform:translate(-50%,-50%)}}
 
 /* Timeline track */
 .journey-track{background:rgba(255,249,223,.94);
