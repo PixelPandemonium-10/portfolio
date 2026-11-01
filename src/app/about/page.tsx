@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 
 const profileFacts = [
   { label: "FOCUS", value: "Combinatorics · Geometry · Number theory" },
-  { label: "TOOLKIT", value: "C++ · Python · JavaScript" },
   { label: "CURIOSITY", value: "Physics · research · startups" },
 ];
 
@@ -30,7 +29,7 @@ const chapters = [
         <em>build.</em>
       </>
     ),
-    copy: "I write software in C++, Python, and JavaScript — games, tools, small experiments. Most of them start as a question from math or physics and end up as something you can click.",
+    copy: "I write software — games, tools, small experiments. Most of them start as a question from math or physics and end up as something you can click.",
   },
   {
     id: "research",

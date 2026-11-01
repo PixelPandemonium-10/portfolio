@@ -12,12 +12,15 @@ const PublicationIcon = () => <svg className="publication-icon" viewBox="0 0 48 
 
 const EducationIcon = () => <svg className="education-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 10 4 19l20 9 20-9z" /><path d="M12 23v9c0 3 5.4 6 12 6s12-3 12-6v-9M40 21v11" /></svg>;
 
-const menuItems: Array<{ key: MenuKey | "about" | "achievements" | "journey" | "publications" | "education"; label: string; icon: ReactNode; hint: string; href?: string }> = [
+const ProgrammingIcon = () => <svg className="programming-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 16 8 24l10 8M30 16l10 8-10 8M27 12l-6 24" /></svg>;
+
+const menuItems: Array<{ key: MenuKey | "about" | "achievements" | "journey" | "publications" | "education" | "programming"; label: string; icon: ReactNode; hint: string; href?: string }> = [
   { key: "about", label: "about me", icon: "◉", hint: "player profile", href: "/about" },
   { key: "achievements", label: "my achievements", icon: <TrophyIcon />, hint: "open archive", href: "/achievements" },
   { key: "journey", label: "my journey", icon: <JourneyIcon />, hint: "every experience has a story", href: "/journey" },
   { key: "publications", label: "publications", icon: <PublicationIcon />, hint: "research, ideas, and manuscripts", href: "/publications" },
   { key: "education", label: "education", icon: <EducationIcon />, hint: "academic journey and mathematical training", href: "/education" },
+  { key: "programming", label: "programming & engineering", icon: <ProgrammingIcon />, hint: "languages, tools, and things I’ve built", href: "/programming" },
   { key: "joke", label: "tell me a joke", icon: "?", hint: "bonus level" },
 ];
 
