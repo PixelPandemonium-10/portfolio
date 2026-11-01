@@ -284,9 +284,10 @@ margin:0}
 .section-label span:last-child{font-size:15px}
 .menu-grid{display:grid;
 gap:16px;
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(3,1fr);
 margin:auto;
 max-width:1144px}
+@media(max-width:980px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
 .menu-card{border:3px solid var(--ink);
 cursor:pointer;
 display:flex;
@@ -301,6 +302,7 @@ transform:translate(-4px,-4px)}
 .card-2{background:var(--mint)}
 .card-3{background:#9ddbf4}
 .card-4{background:#b8a2ee}
+.card-5{background:#ffb7d5}
 .card-index{opacity:.75}
 .card-icon{font-family:var(--pixel);
 font-size:41px;
@@ -678,6 +680,14 @@ stroke-linecap:round;
 stroke-linejoin:round;
 stroke-width:3;
 width:45px}
+.publication-icon{display:block;
+fill:none;
+height:45px;
+stroke:#245da8;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-width:3;
+width:45px}
 
 /* A discrete menu scene: pressing start changes rooms instead of scrolling. */
 .is-playing{height:100svh;
@@ -1007,6 +1017,66 @@ text-align:left}
 .about-actions .achievement-button{justify-content:center}}
 @media(max-width:480px){.profile-card{box-shadow:6px 6px 0 #273251}
 .about-interests h3{font-size:15px}}
+
+/* Publications — editorial list of manuscripts under preparation. */
+.pub-section{background:#fff9e9;
+border-top:1px solid rgba(39,50,81,.2);
+padding:clamp(52px,7vw,90px) clamp(20px,5vw,70px) clamp(70px,9vw,120px)}
+.pub-list{display:grid;
+gap:26px;
+list-style:none;
+margin:0 auto;
+max-width:1000px;
+padding:0}
+.pub-entry{background:#fff;
+border:2px solid #273251;
+box-shadow:4px 4px 0 rgba(39,50,81,.22);
+padding:clamp(24px,3.4vw,40px)}
+.pub-meta{align-items:center;
+display:flex;
+gap:16px;
+justify-content:space-between;
+margin:0 0 18px}
+.pub-meta>span:first-child{color:#245da8;
+font-family:var(--mono);
+font-size:9px;
+letter-spacing:.08em}
+.pub-status{background:#ffd658;
+border:2px solid #273251;
+font-family:var(--mono);
+font-size:9px;
+letter-spacing:.06em;
+padding:6px 10px;
+text-transform:uppercase;
+white-space:nowrap}
+.pub-title{color:#273251;
+font-size:clamp(19px,2.3vw,25px);
+font-weight:600;
+line-height:1.45;
+margin:0}
+.pub-desc{color:#3c486b;
+font-size:17px;
+line-height:1.65;
+margin:16px 0 0;
+max-width:720px}
+.pub-tags{display:flex;
+flex-wrap:wrap;
+gap:8px;
+list-style:none;
+margin:22px 0 0;
+padding:0}
+.pub-tags li{background:#fcf5df;
+border:2px solid #273251;
+border-radius:999px;
+font-family:var(--mono);
+font-size:9px;
+letter-spacing:.08em;
+padding:6px 11px;
+text-transform:uppercase}
+@media(max-width:560px){.pub-entry{box-shadow:3px 3px 0 rgba(39,50,81,.22)}
+.pub-meta{align-items:flex-start;
+flex-direction:column;
+gap:10px}}
 
 /* Journey — a Flappy-Bird timeline built from the archive shell. */
 .journey-page{background:linear-gradient(180deg,#9ddbf4 0%,#bfe9fb 34%,#dcf3fd 66%,#9ed795 92%,#65b85d 100%);

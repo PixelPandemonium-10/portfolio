@@ -8,10 +8,13 @@ const TrophyIcon = () => <svg className="trophy-icon" viewBox="0 0 48 48" aria-h
 
 const JourneyIcon = () => <svg className="journey-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="22" cy="25" r="11" /><path d="M33 21l9 4-9 4M17 28c3-5 9-5 12-1M12 18l-6-3 3 7" /><circle cx="27" cy="21" r="1.6" /></svg>;
 
-const menuItems: Array<{ key: MenuKey | "about" | "achievements" | "journey"; label: string; icon: ReactNode; hint: string; href?: string }> = [
+const PublicationIcon = () => <svg className="publication-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M15 6h13l7 7v29H15z" /><path d="M28 6v7h7M20 21h10M20 27h10M20 33h7" /></svg>;
+
+const menuItems: Array<{ key: MenuKey | "about" | "achievements" | "journey" | "publications"; label: string; icon: ReactNode; hint: string; href?: string }> = [
   { key: "about", label: "about me", icon: "◉", hint: "player profile", href: "/about" },
   { key: "achievements", label: "my achievements", icon: <TrophyIcon />, hint: "open archive", href: "/achievements" },
   { key: "journey", label: "my journey", icon: <JourneyIcon />, hint: "every experience has a story", href: "/journey" },
+  { key: "publications", label: "publications", icon: <PublicationIcon />, hint: "research, ideas, and manuscripts", href: "/publications" },
   { key: "joke", label: "tell me a joke", icon: "?", hint: "bonus level" },
 ];
 
