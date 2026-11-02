@@ -65,7 +65,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/shubhra-shukla-9957953b4/" target="_blank" rel="noopener noreferrer" aria-label="Shubhra Shukla on LinkedIn"><Image src="/icons/linkedin.svg" alt="" width={26} height={26} unoptimized /></a>
               <a href="https://github.com/PixelPandemonium-10" target="_blank" rel="noopener noreferrer" aria-label="Shubhra Shukla on GitHub"><Image src="/icons/github.svg" alt="" width={26} height={26} unoptimized /></a>
             </div>
-            <a href="https://drive.google.com/file/d/1vUwIZ-PfH5rsK4LXLQDEie3ncAzvP64D/view" target="_blank" rel="noopener noreferrer" className="resume-link" aria-label="Open Shubhra Shukla's resume">
+            <a href="https://drive.google.com/file/d/1U4LtULiGJBVaH8Fl966uh8c530VWQF-9/view" target="_blank" rel="noopener noreferrer" className="resume-link" aria-label="Open Shubhra Shukla's resume">
               <ResumeIcon /> <span>resume</span><b>↗</b>
             </a>
           </div>
